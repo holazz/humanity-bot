@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "node index.js",
+    "faucet": "node commands/faucet.js",
+    "claim": "node commands/claim.js",
+    "bridge": "node commands/bridge.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.5",
+    "cron": "^3.5.0",
+    "ethers": "^6.13.2"
+  }
+}
