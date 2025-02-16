@@ -24,7 +24,7 @@ const contract = new Contract('0x5F7CaE7D1eFC8cC05da97D988cFFC253ce3273eF', [
 async function bridge(wallet) {
   try {
     const signer = new Wallet(wallet.privateKey, provider)
-    const randomAmount = parseEther((Math.random() * 0.04 + 0.01).toFixed(2))
+    const randomAmount = parseEther((Math.random() * 1 + 0.01).toFixed(2))
     const res = await contract.connect(signer).bridgeAsset(0, wallet.address, randomAmount, ZeroAddress, true, '0x', {
       value: randomAmount,
     })
